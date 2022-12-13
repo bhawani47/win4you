@@ -72,8 +72,8 @@
   "proxy": "http://localhost:7777",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "serve": "serve -s build",
+    "serve": "webpack serve --mode development",
+    "build": "webpack --mode production",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
